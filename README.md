@@ -8,26 +8,7 @@ The converter takes a non-negative ints as inputs, and produces a Mayan number u
 4. a dot is represented by `*`
 5. a bar is represented by `|` (since numbers are rotated clockwise 90 degrees, the horizontal bar is not vertical)
 
-### Examples
 
-| Arabic Number      | Mayan Number |
-| ----------- | ----------- |
-| 0   | `0`       |
-| 1   | `*`       |
-| 2   | `**`       |
-| 3   | `***`      |
-| 4   | `****`       |
-| 5   | `|`       |
-| 6   | `*|`       |
-| 7   | `**|`       |
-| 8   | `***|`       |
-| 9   | `****|`       |
-| 10  | `||`       |
-| 11  | `*||`       |
-| 12  | `**||`       |
-| 20  | `*_0`       |
-| 21  | `*_*`       |
-
-For more examples, check test cases. Also check the [online converter](https://math.tools/numbers/to-mayan/1) that can convert arabic numbers to the graphical representation of mayan numbers.  
+For examples, check the test cases. Also check the [online converter](https://math.tools/numbers/to-mayan/1) that can convert arabic numbers to the graphical representation of mayan numbers.  
 
 
