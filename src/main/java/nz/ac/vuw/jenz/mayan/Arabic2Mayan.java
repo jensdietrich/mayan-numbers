@@ -26,11 +26,9 @@ public class Arabic2Mayan {
         }
 
         // find highest power of n
-        int pow = 0;
-        while (number > Math.pow(20,pow)) {
-            pow = pow+1;
-        }
-        pow=pow-1;
+        int pow = calcNumberOfDigits(number);
+        assert pow>0;
+        pow = pow-1;
 
         String mayan = "";
         while (pow>=0) {
@@ -56,6 +54,17 @@ public class Arabic2Mayan {
 
         }
         return mayan;
+    }
+
+    static int calcNumberOfDigits (int number) {
+        if (number<1) {
+            throw new IllegalArgumentException("input must be > 0");
+        }
+        int pow = 0;
+        while (number >= Math.pow(20,pow)) {
+            pow = pow+1;
+        }
+        return pow;
     }
 
     public static String convertDigit(int number) {
